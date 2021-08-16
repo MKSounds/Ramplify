@@ -12,9 +12,9 @@ After installation Ramplify offers the following functionalities:
 
 ## Image Installation
 
-Get the file via the download link below and flash it to an empty sd card. Put it into your raspberry pi 3, 4 or zero. That's it!
+Get the file via the download link below and flash it to an empty sd card. Put it into your raspberry pi 3 or zero. That's it!
 
-Download Software for Raspberry Pi 3 and Zero (no AAC Codec implemented)                                                             
+Download Software for Raspberry Pi 3 and Zero                                                           
 https://studhsheilbronnde-my.sharepoint.com/:u:/g/personal/tbreunig_stud_hs-heilbronn_de/EdJX2HswBRRCjQ9cYZ2zEkMBfxNTEfKkX7AQmNINIXbRww?e=BTxE9u
 
 ## How to use
