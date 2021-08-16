@@ -17,11 +17,6 @@ Get the file via the download link below and flash it to an empty sd card. Put i
 Download Software for Raspberry Pi 3,4 and Zero (no AAC Codec implemented)                                                             
 https://studhsheilbronnde-my.sharepoint.com/:u:/g/personal/tbreunig_stud_hs-heilbronn_de/EdJX2HswBRRCjQ9cYZ2zEkMBfxNTEfKkX7AQmNINIXbRww?e=BTxE9u
 
-Download Software for Raspberry Pi 3 and 4 (AAC Codec implemented)                                                  
-https://studhsheilbronnde-my.sharepoint.com/:u:/g/personal/tbreunig_stud_hs-heilbronn_de/EfZdRcmUAadPj1IyiASlXbwB4CTz_x6iN15f32jVk7Onxw?e=4enOeX
-
-
-
 ## How to use
 
 After installing simply reboot the pi, connect to its hotspot "Ramplify" (password: myramplify123%) and access the configuration page via ramplify.audio for teaching wifi and change configurations. The pi-account password in Raspian is "ramplify" .. change that immediately!
@@ -30,7 +25,6 @@ After installing simply reboot the pi, connect to its hotspot "Ramplify" (passwo
 
 - [BlueALSA: Bluetooth Audio ALSA Backend](https://github.com/Arkq/bluez-alsa)
 - [Shairport Sync: AirPlay Audio Receiver](https://github.com/mikebrady/shairport-sync)
-- [Raspotify: Spotify Connect client for the Raspberry Pi that Just Works™](https://github.com/dtcooper/raspotify)
 - [gmrender-resurrect: Headless UPnP Renderer](http://github.com/hzeller/gmrender-resurrect)
 - [Snapcast: Synchronous audio player](https://github.com/badaix/snapcast)
 - [Access Point by ajfisher](https://gist.github.com/ajfisher/a84889e64565d7a74888)
