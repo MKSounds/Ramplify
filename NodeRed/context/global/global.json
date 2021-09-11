@@ -1,0 +1,7 @@
+{
+    "bluetooth": true,
+    "airplay": true,
+    "upnp": true,
+    "once_a_lifetime": 1,
+    "output": "3,5MM"
+}
