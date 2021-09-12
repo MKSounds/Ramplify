@@ -1,15 +1,24 @@
 #!/bin/bash
 
 //install bluetooth AAC and aptX codecs
-cd Bluetooth
+cd ~/Rmaplify/Bluetooth
 
 chmod +755 install.sh
 
 sudo ./install.sh
 
-//instal node-red and dashboard
-cd NodeRed
+
+//install node-red and dashboard
+cd ~/Ramplify/NodeRed
 
 chmod +755 install-node-red.sh
 
 sudo ./install-node-red.sh
+
+
+//install Spotify
+cd ~/Ramplify
+
+chmod +755 install-spotify.sh
+
+sudo ./install-spotify.sh
