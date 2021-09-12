@@ -193,6 +193,7 @@ action=$(expr "$ACTION" : "\([a-zA-Z]\+\).*")
 
 if [ "$action" = "add" ]; then
     bluetoothctl discoverable off
+    sudo systemctl disable --now shairport-sync
     if [ -f /usr/local/share/sounds/WoodenBeaver/stereo/device-added.wav ]; then
         aplay -q /usr/local/share/sounds/WoodenBeaver/stereo/device-added.wav
     fi
@@ -207,6 +208,7 @@ if [ "$action" = "remove" ]; then
     # reenable wifi
     #ifconfig wlan0 up &
     bluetoothctl discoverable on
+    sudo systemctl enable --now shairport-sync
 fi
 EOF
 chmod 755 /usr/local/bin/bluetooth-udev
