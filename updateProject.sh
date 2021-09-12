@@ -21,3 +21,8 @@ sudo ./install-spotify.sh
 cd ~/Ramplify
 chmod +755 install-shairport.sh
 sudo ./install-shairport.sh
+
+//install Upnp
+cd ~/Ramplify
+chmod +755 install-Upnp.sh
+sudo ./install-Upnp.sh
