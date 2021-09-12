@@ -23,7 +23,7 @@ Download the [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operati
 Now you need to activate the ssh-tunnel. You can do it by creating a file named ssh without a filename extension and copy it to the SD-card.
 Activate the netzwork settings or link it by LAN for internet. You need it during the installation and can disconnect it after if you don't need it.
 
-After preparing the SD-Card you can get the remote control by a simply program named [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in consol. The standart username is "pi" and password "raspberry". For your secure you should change the passwort after installing.
+After preparing the SD-Card you can get the remote control by a simply program named [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in consol. The standard username is "pi" and password "raspberry". For your secure you should change the passwort after installing.
 
 - sudo apt-get update
 - sudo apt-get upgrade
