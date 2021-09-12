@@ -1,5 +1,7 @@
 #!/bin/bash
 
+if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
+
 //install Spotify
 sudo apt install curl apt-transport-https -y
 sudo curl -sSL https://dtcooper.github.io/raspotify/key.asc | sudo apt-key add -v -
