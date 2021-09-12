@@ -17,6 +17,21 @@ Get the file via the download link below and flash it to an empty sd card. Put i
 Download Software for Raspberry Pi 3 and Zero                                                           
 https://studhsheilbronnde-my.sharepoint.com/:u:/g/personal/tbreunig_stud_hs-heilbronn_de/EdJX2HswBRRCjQ9cYZ2zEkMBfxNTEfKkX7AQmNINIXbRww?e=BTxE9u
 
+## Installing from scratch
+Download the [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/) version and flash it to a SD-Card with the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/) or something else. You can also choose the Raspberry Pi OS Lite version in the Raspberry Pi Imager.
+Than you need to activate the ssh-tunnel. You can do it by creating a file named ssh without a filename extension and copy it to the SD-card.
+Activate the netzwork settings or link it by LAN for internet. You need it during the installation and can disconnect it after if you don't need it.
+
+After preparing the SD-Card you can get the remote control by a simply program named [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in consol. The standart username is "pi" and password "raspberry". For your secure you should change the passwort after installing.
+
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt intall git
+- git clone https://github.com/MKSounds/Ramplify
+- cd Ramplify
+- chmod +755 updateProject.sh
+- sudo ./updateProject.sh
+
 ## How to use
 
 After installing simply reboot the pi, connect to its hotspot "Ramplify" (password: myramplify123%) and access the configuration page via ramplify.audio for teaching wifi and change configurations. The pi-account password in Raspian is "ramplify" .. change that immediately!
