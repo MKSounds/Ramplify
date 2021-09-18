@@ -31,3 +31,9 @@ sudo ./install-Upnp.sh
 cd ~Ramplfy/AccessPoint
 chmod +755 install-access-point.sh
 sudo ./install-access-point.sh
+
+//delete unnecessary project files
+cd ~
+sudo rm -r Ramplify
+
+read -p Installation has finished, press enter to reboot.[ok]
