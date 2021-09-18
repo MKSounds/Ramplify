@@ -26,3 +26,8 @@ sudo ./install-shairport.sh
 cd ~/Ramplify
 chmod +755 install-Upnp.sh
 sudo ./install-Upnp.sh
+
+//install access point
+cd ~Ramplfy/AccessPoint
+chmod +755 install-access-point.sh
+sudo ./install-access-point.sh
