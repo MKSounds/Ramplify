@@ -3,11 +3,11 @@
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
 #install bluetooth AAC and aptX codecs
-cd Bluetooth
-sudo chmod +755 install.sh
-sudo ./install.sh
+#cd Bluetooth
+#sudo chmod +755 install.sh
+#sudo ./install.sh
 
-cd ..
+#cd ..
 
 #install node-red and dashboard
 cd NodeRed
