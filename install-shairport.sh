@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-//this script was written by Nico Kaiser and adapted
+#this script was written by Nico Kaiser and adapted
 
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
