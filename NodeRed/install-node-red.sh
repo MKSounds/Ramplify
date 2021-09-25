@@ -29,7 +29,8 @@ chmod +755 change_hotspot_password.sh
 chmod +755 rename_nodered_flows.sh
 
 cd ..
-cd ..Ramplify
+cd Ramplify
+cd NodeRed
 
 #enable autostart
 sudo systemctl enable nodered.service
