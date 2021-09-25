@@ -31,7 +31,7 @@ sudo ./install-Upnp.sh
 #install access point
 cd AccessPoint
 sudo chmod +755 install-access-point.sh
-sudo ./install-access-point.sh
+sudo ./install-accespoint.sh
 
 cd ..
 
