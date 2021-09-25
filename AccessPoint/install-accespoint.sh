@@ -23,7 +23,7 @@ sudo sed -i 's$#DAEMON_CONF=""$DAEMON_CONF="/etc/hostapd/hostapd.conf"$' /etc/de
 cd Ramplify
 cd AccessPoint
 
-sudo mv hostapd.conf /etc/hostpad
+sudo mv hostapd.conf /etc/hostapd
 
 sudo mv dnsmasq.conf /etc
 
