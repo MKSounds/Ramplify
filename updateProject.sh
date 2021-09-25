@@ -7,33 +7,34 @@ cd Bluetooth
 sudo chmod +755 install.sh
 sudo ./install.sh
 
+cd ..
+
 #install node-red and dashboard
-cd ~/Ramplify/NodeRed
+cd NodeRed
 sudo chmod +755 install-node-red.sh
 sudo ./install-node-red.sh
 
+cd ..
+
 #install Spotify
-cd ~/Ramplify
 sudo chmod +755 install-spotify.sh
 sudo ./install-spotify.sh
 
 #install Airplay
-cd ~/Ramplify
 sudo chmod +755 install-shairport.sh
 sudo ./install-shairport.sh
 
 #install Upnp
-cd ~/Ramplify
 sudo chmod +755 install-Upnp.sh
 sudo ./install-Upnp.sh
 
 #install access point
-cd ~Ramplfy/AccessPoint
+cd AccessPoint
 sudo chmod +755 install-access-point.sh
 sudo ./install-access-point.sh
 
 #delete unnecessary project files
-cd ~
+cd ..
 sudo rm -r Ramplify
 
 read -p Installation has finished, press enter to reboot.[ok]
