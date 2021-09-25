@@ -13,7 +13,7 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 #install node-red and dashboard
 cd NodeRed
 sudo chmod +755 install-node-red.sh
-sudo ./install-node-red.sh
+bash install-node-red.sh
 echo Node-Red installed
 
 cd ..
