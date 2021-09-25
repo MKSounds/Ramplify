@@ -5,7 +5,7 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 cd ..
 cd ..
 
-xsudo apt-get install hostapd wpasupplicant dnsmasq
+sudo apt-get install hostapd wpasupplicant dnsmasq
 
 sudo update-rc.d -f hostapd remove
 sudo update-rc.d -f dnsmasq remove
