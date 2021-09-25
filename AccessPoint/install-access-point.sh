@@ -2,7 +2,8 @@
 
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
-cd ~
+cd ..
+cd ..
 
 sudo apt-get install hostapd wpasupplicant dnsmasq
 
@@ -16,13 +17,16 @@ read -p Press enter to continue after reading.[ok]
 
 sudo raspi-config
 
-//replace DAEMON_CONF="" in /etc/default/hostapd
+#replace DAEMON_CONF="" in /etc/default/hostapd
 sudo sed -i 's$#DAEMON_CONF=""$DAEMON_CONF="/etc/hostapd/hostapd.conf"$' /etc/default/hostapd
 
-cd ~/Ramplify/AccessPoint
+cd Ramplify
+cd AccessPoint
 
 sudo mv hostapd.conf /etc/hostpad
 
 sudo mv dnsmasq.conf /etc
 
 sudo mv rc.local /etc/rc.local
+
+cd ..
