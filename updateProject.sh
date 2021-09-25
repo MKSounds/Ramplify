@@ -10,11 +10,11 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 #cd ..
 
 #install node-red and dashboard
-cd NodeRed
-sudo chmod +755 install-node-red.sh
-sudo ./install-node-red.sh
+#cd NodeRed
+#sudo chmod +755 install-node-red.sh
+#sudo ./install-node-red.sh
 
-cd ..
+#cd ..
 
 #install Spotify
 sudo chmod +755 install-spotify.sh
