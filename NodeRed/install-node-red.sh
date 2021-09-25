@@ -35,4 +35,4 @@ cd NodeRed
 #enable autostart
 sudo systemctl enable nodered.service
 
-sudo node-red-start
+#sudo node-red-start
