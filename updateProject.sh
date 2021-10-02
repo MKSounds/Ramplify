@@ -46,5 +46,5 @@ cd ~
 sudo rm -r Ramplify
 echo Remplify removed
 
-#read -p Installation has finished, press enter to reboot.[ok]
-#sudo reboot
+read -p Installation has finished, press enter to reboot.
+sudo reboot
