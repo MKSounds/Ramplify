@@ -30,8 +30,8 @@ After preparing the SD-Card you can get the remote control by a simply program n
 - sudo apt install git
 - git clone https://github.com/MKSounds/Ramplify
 - cd Ramplify
-- chmod +755 updateProject.sh
-- sudo ./updateProject.sh
+- sudo chmod +755 updateProject.sh
+- bash updateProject.sh
 
 ## How to use
 
