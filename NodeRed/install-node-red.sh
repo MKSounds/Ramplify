@@ -5,7 +5,6 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 
 #install dashboard
 cd ~/.node-red
-cd .node-red
 
 npm i node-red-dashboard
 
