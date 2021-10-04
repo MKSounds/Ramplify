@@ -3,12 +3,10 @@
 #if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
 #install bluetooth AAC and aptX codecs
-#cd Bluetooth
+#cd ~/Ramplify/Bluetooth
 #sudo chmod +755 install.sh
 #sudo ./install.sh
 #echo bl installed
-
-#cd ..
 
 #install node-red and dashboard
 cd ~/Ramplify/NodeRed
