@@ -36,7 +36,7 @@ echo Upnp installed
 #install access point
 #cd AccessPoint
 cd ~/Ramplify/AccessPoint
-sudo chmod +755 install-access-point.sh
+sudo chmod +755 install-accespoint.sh
 sudo ./install-accespoint.sh
 echo AccessPoint installed
 
