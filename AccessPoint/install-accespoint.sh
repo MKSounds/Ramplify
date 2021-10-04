@@ -3,8 +3,6 @@
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
 cd ~
-#cd ..
-#cd ..
 
 sudo apt-get install hostapd wpasupplicant dnsmasq
 
@@ -29,5 +27,3 @@ sudo mv hostapd.conf /etc/hostapd
 sudo mv dnsmasq.conf /etc
 
 sudo mv rc.local /etc/rc.local
-
-#cd ..
