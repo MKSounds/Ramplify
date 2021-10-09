@@ -5,7 +5,7 @@
 #install bluetooth AAC and aptX codecs
 #cd ~/Ramplify/Bluetooth
 #sudo chmod +755 install-bluetooth-features.sh
-#sudo ./install-bluetooth.sh
+#sudo ./install-bluetooth-features.sh
 #echo Bluetooth installed
 #cd ~
 #rm sudo rm -r rpi-multiroom-setup-master
