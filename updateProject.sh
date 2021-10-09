@@ -4,7 +4,7 @@
 
 #install bluetooth AAC and aptX codecs
 #cd ~/Ramplify/Bluetooth
-#sudo chmod +755 install-bluetooth.sh
+#sudo chmod +755 install-bluetooth-features.sh
 #sudo ./install-bluetooth.sh
 #echo Bluetooth installed
 #cd ~
