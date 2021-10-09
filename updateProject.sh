@@ -4,9 +4,12 @@
 
 #install bluetooth AAC and aptX codecs
 #cd ~/Ramplify/Bluetooth
-#sudo chmod +755 install.sh
-#sudo ./install.sh
-#echo bl installed
+#sudo chmod +755 install-bluetooth.sh
+#sudo ./install-bluetooth.sh
+#echo Bluetooth installed
+#cd ~
+#rm sudo rm -r rpi-multiroom-setup-master
+#echo rpi-multiroom-setup-master removed
 
 #install node-red and dashboard
 cd ~/Ramplify/NodeRed
