@@ -46,5 +46,9 @@ cd ~
 sudo rm -r Ramplify
 echo Remplify removed
 
+#set hostname to "Ramplify"
+sudo hostname -b {NEUER_NAME}
+echo "Hostname changed to Ramplify"
+
 read -p "Installation has finished press enter to reboot.[ok]"
 sudo reboot
