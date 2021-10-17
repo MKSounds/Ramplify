@@ -40,6 +40,11 @@ sudo chmod +755 install-accespoint.sh
 sudo ./install-accespoint.sh
 echo AccessPoint installed
 
+#install  I2S-Traibers
+cd ~/Ramplify
+sudo chmod +755 install-GenericI2S-Traiber.sh
+sudo ./install-GenericI2S-Traiber.sh
+
 cd ~
 
 #delete unnecessary project files
@@ -48,7 +53,8 @@ echo Remplify removed
 
 #set hostname to "Ramplify"
 sudo hostname -b {NEUER_NAME}
-echo "Hostname changed to Ramplify"
+echo "Hostname changed to"
+hostname
 
 read -p "Installation has finished press enter to reboot.[ok]"
 sudo reboot
