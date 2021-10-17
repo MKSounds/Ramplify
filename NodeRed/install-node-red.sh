@@ -1,7 +1,10 @@
 #!/bin/bash -e
 
 #install latest version of node-red
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) << EOF
+y
+y
+EOF
 
 #install dashboard
 cd ~/.node-red
