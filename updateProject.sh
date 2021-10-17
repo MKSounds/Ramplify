@@ -53,7 +53,7 @@ sudo rm -r Ramplify
 echo Remplify removed
 
 #set hostname to "Ramplify"
-sudo hostname -b {NEUER_NAME}
+sudo hostname -b Ramplify
 echo "Hostname changed to"
 hostname
 
