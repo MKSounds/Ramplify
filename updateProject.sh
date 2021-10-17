@@ -57,5 +57,12 @@ sudo hostname -b Ramplify
 echo "Hostname changed to"
 hostname
 
+#unblock wifi from rfkill
+echo "To unblock wifi from rfkill you must set your country."
+echo "Please enter your country abbreviation. You can find "
+echo "your country's code here: https://en.wikipedia.org/wiki/ISO_3166-"
+read country
+sudo raspi-config nonint do_wifi_country $country
+
 read -p "Installation has finished press enter to reboot.[ok]"
 sudo reboot
