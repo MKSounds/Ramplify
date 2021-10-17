@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash -e
 
 cd ~
 git clone https://github.com/MKSounds/ADAU1701-I2S-Audio-Driver-for-Raspberry-Pi.git
