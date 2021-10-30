@@ -60,7 +60,7 @@ sudo rm -r Ramplify
 echo Remplify removed
 
 #set hostname to "Ramplify"
-sudo hostname -b Ramplify
+sudo sed -i 's$raspberrypi$Ramplify$' /etc/hostname
 echo "Hostname changed to"
 hostname
 echo
