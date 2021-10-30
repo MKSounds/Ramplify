@@ -50,7 +50,7 @@ echo
 cd ~/Ramplify
 sudo chmod +755 install-GenericI2S-Traiber.sh
 sudo ./install-GenericI2S-Traiber.sh
-echo "I2S-Traibers installed"
+echo "I2S-drivers installed"
 echo
 
 cd ~
