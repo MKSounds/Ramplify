@@ -34,13 +34,13 @@ After preparing the SD-Card you can get the remote control by a simply program n
 - sudo chmod +755 updateProject.sh
 - bash updateProject.sh
 ```
-- sudo apt-get update
-- sudo apt-get upgrade
-- sudo apt install git
-- git clone https://github.com/MKSounds/Ramplify
-- cd Ramplify
-- sudo chmod +755 updateProject.sh
-- bash updateProject.sh
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install git
+git clone https://github.com/MKSounds/Ramplify
+cd Ramplify
+sudo chmod +755 updateProject.sh
+bash updateProject.sh
 
 NOTICE:<br/>
 Node-Red only contains the packages for the the Raspberry PI on which they were installed. If you remove the installed SD card and put him into an other Raspberry version it makes possible to don't work anymore. In these case you must install the Node-Red again manuell for the missing packages. Use the following command to do this. (It will just working if you install the project before)
