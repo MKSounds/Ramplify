@@ -26,14 +26,6 @@ Activate the netzwork settings or link it by LAN for internet. You need it durin
 After preparing the SD-Card you can get the remote control by a simply program named [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in consol. The standard username is "pi" and password "raspberry". For your secure you should change the passwort after installing.
 
 ```javascript
-- sudo apt-get update
-- sudo apt-get upgrade
-- sudo apt install git
-- git clone https://github.com/MKSounds/Ramplify
-- cd Ramplify
-- sudo chmod +755 updateProject.sh
-- bash updateProject.sh
-```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt install git
@@ -41,6 +33,8 @@ git clone https://github.com/MKSounds/Ramplify
 cd Ramplify
 sudo chmod +755 updateProject.sh
 bash updateProject.sh
+```
+
 
 NOTICE:<br/>
 Node-Red only contains the packages for the the Raspberry PI on which they were installed. If you remove the installed SD card and put him into an other Raspberry version it makes possible to don't work anymore. In these case you must install the Node-Red again manuell for the missing packages. Use the following command to do this. (It will just working if you install the project before)
