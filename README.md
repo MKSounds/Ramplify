@@ -39,7 +39,7 @@ bash updateProject.sh
 NOTICE:<br/>
 Node-Red only contains the packages for the the Raspberry PI on which they were installed. If you remove the installed SD card and put him into an other Raspberry version it makes possible to don't work anymore. In these case you must install the Node-Red again manuell for the missing packages. Use the following command to do this. (It will just working if you install the project before)
 
-- bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+```bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)```
 
 You can also install the project again with the new Raspberry Pi.
 
