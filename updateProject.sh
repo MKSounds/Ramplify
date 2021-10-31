@@ -61,8 +61,7 @@ echo Remplify removed
 
 #set hostname to "Ramplify"
 sudo sed -i 's$raspberrypi$Ramplify$' /etc/hostname
-echo "Hostname changed to"
-hostname
+echo "Hostname changed to Ramplify"
 echo
 
 #unblock wifi from rfkill
