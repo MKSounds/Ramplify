@@ -14,7 +14,7 @@ npm i node-red-dashboard
 #clone dashboard flows
 cd ~/Ramplify/NodeRed
 
-sudo mv change_hotspot_password.sh context flows_raspberrypi_cred.json flows_raspberrypi.json package.json package-lock.json rename_nodered_flows.sh settings.js /home/pi/.node-red
+sudo mv change_hotspot_password.sh context flows_Ramplify_cred.json flows_Ramplify.json package.json package-lock.json rename_nodered_flows.sh settings.js /home/pi/.node-red
 
 cd ~/.node-red
 chmod +755 change_hotspot_password.sh
