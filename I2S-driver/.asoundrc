@@ -1,0 +1,9 @@
+pcm.InterpolatedOutput {	#copy in this file
+  type plug
+  slave {
+      pcm "hw:0,0"
+      format S24_LE
+      rate 48000
+  }
+}
+pcm.!default InterpolatedOutput
