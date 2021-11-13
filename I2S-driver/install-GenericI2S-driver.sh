@@ -22,4 +22,6 @@ cd /home/pi/Ramplify/I2S-driver
 
 sudo mv .asoundrc /home/pi
 
+cd /home/pi
+
 sudo remove -r ADAU1701-I2S-Audio-Driver-for-Raspberry-Pi
