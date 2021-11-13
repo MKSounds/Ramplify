@@ -3,7 +3,7 @@ pcm.InterpolatedOutput {	#copy in this file
   slave {
       pcm "hw:0,0"
       format S24_LE
-      rate 48000
+      rate 44100
   }
 }
 pcm.!default InterpolatedOutput
