@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd /home/pi
 
 sudo rpi-update 5c80565
 
@@ -16,7 +16,10 @@ sudo mv generic_audio_out_i2s_master.dtbo generic_audio_out_i2s_slave.dtbo gener
 
 #sed -i '$ a\'"$dtoverlay=adau1701-i2s" $config.txt /boot
 
-sed -i '$ a\'"$[all]" $config.txt /boot
+#add lines at the end of the file
+sed -i '$ a\a\'"[all]" /boot/config.txt
+sed -i '$ a\'"#placeholder" /boot/config.txt
+sed -i '$ a\'"#placeholder" /boot/config.txt
 
 cd /home/pi/Ramplify/I2S-driver
 
