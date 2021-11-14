@@ -11,7 +11,7 @@ rm snapserver_0.25.0-1_armhf.deb
 
 #sed configs
 #sudo sed -i '$ a\'"SNAPSERVER_OPTS=$"– codec flac$"" /etc/default/snapserver
-sudo sed -i 's$SNAPSERVER_OPTS="-d – codec flac"$SNAPSERVER_OPTS="– codec flac"$' /etc/default/snapserver
+sudo sed -i 's$SNAPSERVER_OPTS=""$SNAPSERVER_OPTS="– codec flac"$' /etc/default/snapserver
 
 #sed audio streams
 sudo sed -i '$ a\'"source = pipe:///tmp/snapfifo?name=default" /etc/snapserver.conf
