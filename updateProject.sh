@@ -6,17 +6,17 @@
 #cd ~/Ramplify/Bluetooth
 #sudo chmod +755 install-bluetooth-features.sh
 #sudo ./install-bluetooth-features.sh
-#echo "Bluetooth installed"
+#echo "Bluetooth installed!"
 #cd ~
 #rm sudo rm -r rpi-multiroom-setup-master
-#echo "rpi-multiroom-setup-master removed"
+#echo "rpi-multiroom-setup-master removed!"
 echo
 
 #install node-red and dashboard
 cd ~/Ramplify/NodeRed
 sudo chmod +755 install-node-red.sh
 bash install-node-red.sh
-echo "Node-Red installed"
+echo "Node-Red installed!"
 echo
 
 cd ~/Ramplify
@@ -30,28 +30,33 @@ echo
 #install Airplay
 sudo chmod +755 install-shairport.sh
 sudo ./install-shairport.sh
-echo "Airplay installed"
+echo "Airplay installed!"
 echo
 
 #install Upnp
 sudo chmod +755 install-Upnp.sh
 sudo ./install-Upnp.sh
-echo "Upnp installed"
+echo "Upnp installed!"
 echo
 
 #install access point
 cd ~/Ramplify/AccessPoint
 sudo chmod +755 install-accespoint.sh
 sudo ./install-accespoint.sh
-echo "AccessPoint installed"
+echo "AccessPoint installed!"
 echo
 
 #install  I2S-Traibers
 cd /home/pi/Ramplify/I2S-driver
 sudo chmod +755 install-GenericI2S-driver.sh
 sudo ./install-GenericI2S-driver.sh
-echo "I2S-drivers installed"
+echo "I2S-drivers installed!"
 echo
+
+cd /home/pi/Ramplify/Snapcast
+sudo chmod +755 install-snapcast.sh
+sudo ./install-snapcast.sh
+echo "Snapcast Insalled!"
 
 cd ~
 
@@ -61,7 +66,7 @@ echo Remplify removed
 
 #set hostname to "Ramplify"
 sudo sed -i 's$raspberrypi$Ramplify$' /etc/hostname
-echo "Hostname changed to Ramplify"
+echo "Hostname changed to Ramplify!"
 echo
 
 #unblock wifi from rfkill
