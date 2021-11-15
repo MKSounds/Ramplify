@@ -5,8 +5,8 @@ cd /home/pi
 #install
 wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapserver_0.25.0-1_armhf.deb
 sudo dpkg -i snapserver_0.25.0-1_armhf.deb
-sudo apt-get -f install --yes
-sudo apt-get update
+#sudo apt-get -f install --yes
+#sudo apt-get update
 rm snapserver_0.25.0-1_armhf.deb
 
 #sed configs
