@@ -25,7 +25,7 @@ Activate the netzwork settings or link it by LAN for internet. You need it durin
 
 After preparing the SD-Card you can get the remote control by a simply program named [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in consol. The standard username is "pi" and password "raspberry". For your secure you should change the passwort after installing.
 
-```bashscript
+```javascript
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt install git
