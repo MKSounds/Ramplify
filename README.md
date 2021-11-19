@@ -35,7 +35,7 @@ sudo chmod +755 updateProject.sh
 bash updateProject.sh
 ```
 
-You will find the web interface by ```<ip-address-raspi>:1880``` and the SnapWeb by ```<ip-address-raspi>:1780```.
+You will find the web interface by ```<ip-address-raspi>:1880``` and the SnapWeb by ```<ip-address-raspi>:1780```. You can find more infos about the SnapWeb or Snapdroid [here](https://github.com/badaix/snapweb).
 
 NOTICE:<br/>
 Node-Red only contains the packages for the the Raspberry Pi on which they were installed. If you remove the installed SD card and put him into an other Raspberry version it makes possible to don't work anymore. In these case you must install the Node-Red again manuell for the missing packages. Use the following command to do this. (It will just working if you install the project before)
