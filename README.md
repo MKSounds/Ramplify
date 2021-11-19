@@ -35,6 +35,8 @@ sudo chmod +755 updateProject.sh
 bash updateProject.sh
 ```
 
+Since the installation takes some time, it is recommended to use a more powerful Raspberry (e.g. Raspberry 3 or 4) for the installation and to change the SD card afterwards.
+
 You will find the web interface by ```<ip-address-raspi>:1880``` and the SnapWeb by ```<ip-address-raspi>:1780```. You can find more infos about the SnapWeb or Snapdroid [here](https://github.com/badaix/snapweb).
 
 NOTICE:<br/>
@@ -61,3 +63,4 @@ After installing simply reboot the pi, connect to its hotspot "Ramplify" (passwo
 - [Snapcast: Synchronous audio player](https://github.com/badaix/snapcast)
 - [Access Point by ajfisher](https://gist.github.com/ajfisher/a84889e64565d7a74888)
 - [NODE-RED](https://nodered.org/)
+- [Raspotify](https://hoerli.net/mopidy-snapcast-multi-room-music-setup/)
