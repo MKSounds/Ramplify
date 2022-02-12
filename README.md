@@ -10,20 +10,13 @@ After installation Ramplify offers the following functionalities:
 - Change hostname, add wifi or change the accessibility of your raspberry pi
 - Further functionalities, including output-change on raspberry (I2S, 3.5mm-jack, HDMI)
 
-## Image Installation
-
-Get the file via the download link below and flash it to an empty sd card. Put it into your raspberry pi 3 or zero. That's it!
-
-Download Software for Raspberry Pi 3 and Zero                                                           
-https://studhsheilbronnde-my.sharepoint.com/:u:/g/personal/tbreunig_stud_hs-heilbronn_de/EdJX2HswBRRCjQ9cYZ2zEkMBfxNTEfKkX7AQmNINIXbRww?e=BTxE9u
-
 ## Installing from scratch
-Download the [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/) (it was tested by the version from: 2021-05-07) version and flash it to a SD-Card with the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/) or something else. You can also choose the Raspberry Pi OS Lite version in the Raspberry Pi Imager.
+Download the [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/operating-systems/) (it was tested with the version from: 2021-05-07) version and flash it to a sd card with the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/) or something else. You can also select the Raspberry Pi OS Lite version in the Raspberry Pi Imager.
 
-Now you need to activate the ssh-tunnel. You can do it by creating a file named ssh without a filename extension and copy it to the SD-card.
-Activate the netzwork settings or link it by LAN for internet. You need it during the installation and can disconnect it after if you don't need it.
+Now you have to activate the ssh tunnel. To do this, create a file named ssh without a file name extension and copy it to the SD card.
+Activate the network settings or connect it to the Internet via LAN. You will need this during installation and can disconnect afterwards if you do not need it.
 
-After preparing the SD-Card you can get the remote control by a simply program named [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in consol. The standard username is "pi" and password "raspberry". For your secure you should change the passwort after installing.
+After you have prepared the SD card, you can access the remote control with a simple program called [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in the console. The default username is "pi" and the password is "raspberry". For your security you should change the password after installation.
 
 ```javascript
 sudo apt-get update
@@ -37,10 +30,10 @@ bash updateProject.sh
 
 Since the installation takes some time, it is recommended to use a more powerful Raspberry (e.g. Raspberry 3 or 4) for the installation and to change the SD card afterwards.
 
-You will find the web interface by ```<ip-address-raspi>:1880``` and the SnapWeb by ```<ip-address-raspi>:1780```. You can find more infos about the SnapWeb or Snapdroid [here](https://github.com/badaix/snapweb).
+You will find the Web interface at ```<ip-address-raspi>:1880``` and the SnapWeb at ```<ip-address-raspi>:1780```. You can find more information about SnapWeb and Snapdroid [here](https://github.com/badaix/snapweb).
 
 NOTICE:<br/>
-Node-Red only contains the packages for the the Raspberry Pi on which they were installed. If you remove the installed SD card and put him into an other Raspberry version it makes possible to don't work anymore. In these case you must install the Node-Red again manuell for the missing packages. Use the following command to do this. (It will just working if you install the project before)
+Node-Red only contains the packages for the Raspberry Pi on which they were installed. If you remove the installed SD card and put it into another Raspberry version, it may not work anymore. In this case, you will need to manually reinstall the Node-Red for the missing packages. Use the following command to do this. (It will only work if you install the project before).
 
 ```bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)```
 
@@ -51,8 +44,9 @@ You can also install the project again with the new Raspberry Pi.
 After installing simply reboot the pi, connect to its hotspot "Ramplify" (password: myramplify123%) and access the configuration page via ramplify.audio for teaching wifi and change configurations. The pi-account password in Raspian is "ramplify" .. change that immediately!
 
 ## To-Do
-- ACC and aptX codec
-- Snapcast multiroom implementation
+- Implement SnapWeb in Node-Red
+- Mutual deactivation of inputs
+- Several input options
 - Raspberry Pi 4 compatibility
 
 ## References
