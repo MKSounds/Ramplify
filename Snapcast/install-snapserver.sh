@@ -2,11 +2,11 @@
 
 cd /home/pi
 
-#install
+#get files
 wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapserver_0.25.0-1_armhf.deb
+# new version: https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_armhf.deb
+
 sudo dpkg -i snapserver_0.25.0-1_armhf.deb
-#sudo apt-get -f install --yes
-#sudo apt-get update
 rm snapserver_0.25.0-1_armhf.deb
 
 #sed configs
@@ -14,11 +14,11 @@ rm snapserver_0.25.0-1_armhf.deb
 sudo sed -i 's$SNAPSERVER_OPTS=""$SNAPSERVER_OPTS="– codec flac"$' /etc/default/snapserver
 
 #sed audio streams
-
 sudo sed -i '131i source = airplay:///shairport-sync?name=AirPi[&dryout_ms=2000][&port=5000]' /etc/snapserver.conf
 sudo sed -i '132i stream = spotify:///librespot?name=Spotify&devicename=Snapcast&killall=true' /etc/snapserver.conf
 sudo sed -i '133i source = pipe:///tmp/snapfifo?name=Bluetooth' /etc/snapserver.conf
 
+#update asound.conf, redirect audio to snapfifo
 sudo cat > asound.conf <<EOF
 pcm.!default {
   type plug
