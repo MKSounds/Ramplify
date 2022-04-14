@@ -24,7 +24,7 @@ sudo apt-get upgrade
 sudo apt install git
 git clone https://github.com/MKSounds/Ramplify
 cd Ramplify
-sudo chmod +755 updateProject.sh
+sudo chmod +755 install-Ramplify.sh
 bash updateProject.sh
 ```
 
