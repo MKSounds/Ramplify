@@ -21,9 +21,8 @@ echo "Node-Red installed"
 echo "----------------------------"
 echo
 
-cd ~/Ramplify
-
 #install Spotify
+cd ~/Ramplify
 sudo chmod +755 install-spotify.sh
 sudo ./install-spotify.sh
 echo "----------------------------"
@@ -47,7 +46,7 @@ echo "Upnp installed"
 echo "----------------------------"
 echo
 
-#install access point
+#install Access point
 cd ~/Ramplify/AccessPoint
 sudo chmod +755 install-accespoint.sh
 sudo ./install-accespoint.sh
@@ -56,7 +55,7 @@ echo "AccessPoint installed"
 echo "----------------------------"
 echo
 
-#install  I2S drivers
+#install I2S drivers
 cd /home/pi/Ramplify/I2S-driver
 sudo chmod +755 install-GenericI2S-driver.sh
 sudo ./install-GenericI2S-driver.sh
@@ -65,6 +64,7 @@ echo "Generic I2S drivers installed"
 echo "----------------------------"
 echo
 
+#install Snapcast
 cd /home/pi/Ramplify/Snapcast
 sudo chmod +755 install-snapcast.sh
 sudo ./install-snapcast.sh
@@ -73,16 +73,17 @@ echo "Snapcast installed"
 echo "----------------------------"
 echo
 
-cd ~
+
 #delete installation files
+cd ~
 sudo rm -r Ramplify
-echo "----------------------------"
-echo "Ramplify directory removed"
-echo "----------------------------"
+echo
+echo "Ramplify installation files removed"
+echo
 
 #set hostname to "Ramplify"
 sudo sed -i 's$raspberrypi$Ramplify$' /etc/hostname
-echo "Hostname changed to Ramplify!"
+echo "Hostname changed to Ramplify"
 echo
 
 #unblock wifi from rfkill
@@ -97,5 +98,8 @@ read country
 sudo raspi-config nonint do_wifi_country $country
 echo
 
+echo "----------------------------------------------------"
+echo "----------------------------------------------------"
 read -p "Installation has finished press enter to reboot"
+
 sudo reboot
