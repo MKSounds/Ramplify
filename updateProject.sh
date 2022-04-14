@@ -65,7 +65,7 @@ echo "----------------------------"
 echo
 
 #install Snapcast
-cd /home/pi/Ramplify/Snapcast
+cd ~/Ramplify
 sudo chmod +755 install-snapcast.sh
 sudo ./install-snapcast.sh
 echo "----------------------------"
