@@ -25,7 +25,7 @@ sudo apt install git
 git clone https://github.com/MKSounds/Ramplify
 cd Ramplify
 sudo chmod +755 install-Ramplify.sh
-bash updateProject.sh
+bash install-Ramplify.sh
 ```
 
 Since the installation takes some time, it is recommended to use a more powerful Raspberry (e.g. Raspberry 3 or 4) for the installation and to change the SD card afterwards.
