@@ -21,7 +21,7 @@ After you have prepared the SD card, you can access the remote control with a si
 ```javascript
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt install git
+sudo apt install -y git
 git clone https://github.com/MKSounds/Ramplify
 cd Ramplify
 sudo chmod +755 install-Ramplify.sh
