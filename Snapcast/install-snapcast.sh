@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 #install Snapserver
 cd /home/pi/Ramplify/Snapcast
