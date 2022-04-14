@@ -16,7 +16,9 @@ echo
 cd ~/Ramplify/NodeRed
 sudo chmod +755 install-node-red.sh
 bash install-node-red.sh
-echo "Node-Red installed!"
+echo "----------------------------"
+echo "Node-Red installed"
+echo "----------------------------"
 echo
 
 cd ~/Ramplify
@@ -24,45 +26,59 @@ cd ~/Ramplify
 #install Spotify
 sudo chmod +755 install-spotify.sh
 sudo ./install-spotify.sh
+echo "----------------------------"
 echo "Spotify installed"
+echo "----------------------------"
 echo
 
 #install Airplay
 sudo chmod +755 install-shairport.sh
 sudo ./install-shairport.sh
-echo "Airplay installed!"
+echo "----------------------------"
+echo "Airplay installed"
+echo "----------------------------"
 echo
 
 #install Upnp
 sudo chmod +755 install-Upnp.sh
 sudo ./install-Upnp.sh
-echo "Upnp installed!"
+echo "----------------------------"
+echo "Upnp installed"
+echo "----------------------------"
 echo
 
 #install access point
 cd ~/Ramplify/AccessPoint
 sudo chmod +755 install-accespoint.sh
 sudo ./install-accespoint.sh
-echo "AccessPoint installed!"
+echo "----------------------------"
+echo "AccessPoint installed"
+echo "----------------------------"
 echo
 
-#install  I2S-Traibers
+#install  I2S drivers
 cd /home/pi/Ramplify/I2S-driver
 sudo chmod +755 install-GenericI2S-driver.sh
 sudo ./install-GenericI2S-driver.sh
-echo "I2S-drivers installed!"
+echo "----------------------------"
+echo "Generic I2S drivers installed"
+echo "----------------------------"
 echo
 
 cd /home/pi/Ramplify/Snapcast
 sudo chmod +755 install-snapcast.sh
 sudo ./install-snapcast.sh
-echo "Snapcast Insalled!"
+echo "----------------------------"
+echo "Snapcast installed"
+echo "----------------------------"
+echo
 
 cd ~
-
-#delete unnecessary project files
+#delete installation files
 sudo rm -r Ramplify
-echo Remplify removed
+echo "----------------------------"
+echo "Ramplify directory removed"
+echo "----------------------------"
 
 #set hostname to "Ramplify"
 sudo sed -i 's$raspberrypi$Ramplify$' /etc/hostname
@@ -75,9 +91,11 @@ echo "Please enter your country abbreviation. You can find "
 echo "your country's code here: https://en.wikipedia.org/wiki/ISO_3166-1"
 echo "Here are a few examples:"
 echo "AR AU AT BE BG CD FI FR DE GR HK IN IE IT NZ PL RU ES SE US"
+echo "Germany = DE"
+
 read country
 sudo raspi-config nonint do_wifi_country $country
 echo
 
-read -p "Installation has finished press enter to reboot.[ok]"
+read -p "Installation has finished press enter to reboot"
 sudo reboot
