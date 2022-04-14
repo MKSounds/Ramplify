@@ -3,7 +3,7 @@
 cd /home/pi/Ramplify/Snapcast
 
 sudo chmod +755 install-snapserver.sh
-sudo./install-snapserver.sh
+sudo ./install-snapserver.sh
 echo "Snapserver installed"
 
 cd /home/pi/Ramplify/Snapcast
