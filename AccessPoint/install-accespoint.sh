@@ -21,11 +21,10 @@ sudo raspi-config
 #replace DAEMON_CONF="" in /etc/default/hostapd
 sudo sed -i 's$#DAEMON_CONF=""$DAEMON_CONF="/etc/hostapd/hostapd.conf"$' /etc/default/hostapd
 
-#cd Ramplify
+
+#move config files
 cd /home/pi/Ramplify/AccessPoint
 
 sudo mv hostapd.conf /etc/hostapd
-
 sudo mv dnsmasq.conf /etc
-
 sudo mv rc.local /etc/rc.local
