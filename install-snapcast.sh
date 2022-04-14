@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#-----------------------
 #install Snapserver
+#-----------------------
 cd /home/pi
 
 #get files
-wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapserver_0.25.0-1_armhf.deb
-# new version: https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_armhf.deb
+#wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapserver_0.25.0-1_armhf.deb
+wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapserver_0.26.0-1_armhf.deb
 
 sudo dpkg -i snapserver_0.25.0-1_armhf.deb
 rm snapserver_0.25.0-1_armhf.deb
@@ -46,16 +46,16 @@ sudo mv asound.conf /etc
 
 echo "Snapserver installed"
 
-#-----------------------
-#install Snapclient
-cd /home/pi
 
-#snapclient v0.24 needs dependency libpulse0
+#install Snapclient
+#-----------------------
+cd /home/pi
 
 #install v24
 #wget  https://github.com/badaix/snapcast/releases/download/v0.24.0/snapclient_0.24.0-1_armhf.deb
 #sudo dpkg -i snapclient_0.24.0-1_armhf.deb
 #rm snapclient_0.24.0-1_armhf.deb
+#snapclient v0.24 needs dependency libpulse0
 
 #install v25
 #wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapclient_0.25.0-1_armhf.deb
@@ -63,7 +63,7 @@ cd /home/pi
 #rm snapclient_0.25.0-1_armhf.deb
 
 #install v26
-wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapclient_0.25.0-1_armhf.deb
+wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_armhf.deb
 sudo dpkg -i snapclient_0.25.0-1_armhf.deb
 rm snapclient_0.25.0-1_armhf.deb
 
