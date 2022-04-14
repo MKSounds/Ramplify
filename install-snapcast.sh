@@ -1,10 +1,6 @@
 #!/bin/bash
 
 
-#install dependencies
-sudo apt install libasyncns0 x11-common libice6 libsm6 libx11-xcb1 libxi6 libxtst6 libpulse0 libvorbisidec1
-
-
 #install Snapserver
 #-----------------------
 cd /home/pi
@@ -54,6 +50,10 @@ echo "Snapserver installed"
 
 #install Snapclient
 #-----------------------
+
+#install dependencies
+#sudo apt install libasyncns0 x11-common libice6 libsm6 libx11-xcb1 libxi6 libxtst6 libpulse0 libvorbisidec1
+
 cd /home/pi
 
 #install v24
@@ -62,15 +62,15 @@ cd /home/pi
 #rm snapclient_0.24.0-1_armhf.deb
 #snapclient v0.24 needs dependency libpulse0
 
-#install v25
-#wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapclient_0.25.0-1_armhf.deb
-#sudo dpkg -i snapclient_0.25.0-1_armhf.deb
-#rm snapclient_0.25.0-1_armhf.deb
-
 #install v26
-wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_armhf.deb
-sudo dpkg -i snapclient_0.26.0-1_armhf.deb
-rm snapclient_0.26.0-1_armhf.deb
+#wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_armhf.deb
+#sudo dpkg -i snapclient_0.26.0-1_armhf.deb
+#rm snapclient_0.26.0-1_armhf.deb
+
+#install v26 without pulse
+wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_without-pulse_armhf.deb
+sudo dpkg -i snapclient_0.26.0-1_without-pulse_armhf.deb
+rm snapclient_0.26.0-1_without-pulse_armhf.deb
 
 
 echo "Snapclient installed"
