@@ -8,8 +8,8 @@ cd /home/pi
 #wget https://github.com/badaix/snapcast/releases/download/v0.25.0/snapserver_0.25.0-1_armhf.deb
 wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapserver_0.26.0-1_armhf.deb
 
-sudo dpkg -i snapserver_0.25.0-1_armhf.deb
-rm snapserver_0.25.0-1_armhf.deb
+sudo dpkg -i snapserver_0.26.0-1_armhf.deb
+rm snapserver_0.26.0-1_armhf.deb
 
 #sed configs
 #sudo sed -i '$ a\'"SNAPSERVER_OPTS=$"– codec flac$"" /etc/default/snapserver
@@ -64,8 +64,8 @@ cd /home/pi
 
 #install v26
 wget https://github.com/badaix/snapcast/releases/download/v0.26.0/snapclient_0.26.0-1_armhf.deb
-sudo dpkg -i snapclient_0.25.0-1_armhf.deb
-rm snapclient_0.25.0-1_armhf.deb
+sudo dpkg -i snapclient_0.26.0-1_armhf.deb
+rm snapclient_0.26.0-1_armhf.deb
 
 
 echo "Snapclient installed"
