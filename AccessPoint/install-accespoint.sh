@@ -22,7 +22,7 @@ sudo raspi-config
 sudo sed -i 's$#DAEMON_CONF=""$DAEMON_CONF="/etc/hostapd/hostapd.conf"$' /etc/default/hostapd
 
 #cd Ramplify
-cd ~/Ramplify/AccessPoint
+cd /home/pi/Ramplify/AccessPoint
 
 sudo mv hostapd.conf /etc/hostapd
 
