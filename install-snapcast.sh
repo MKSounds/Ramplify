@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+#install dependencies
+sudo apt install libasyncns0 x11-common libice6 libsm6 libx11-xcb1 libxi6 libxtst6 libpulse0 libvorbisidec1
+
+
 #install Snapserver
 #-----------------------
 cd /home/pi
