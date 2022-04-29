@@ -42,12 +42,12 @@ echo "----------------------------"
 echo
 
 #install Upnp
-sudo chmod +755 install-Upnp.sh
-sudo ./install-Upnp.sh
-echo "----------------------------"
-echo "Upnp installed"
-echo "----------------------------"
-echo
+#sudo chmod +755 install-Upnp.sh
+#sudo ./install-Upnp.sh
+#echo "----------------------------"
+#echo "Upnp installed"
+#echo "----------------------------"
+#echo
 
 #install Access point
 cd ~/Ramplify/AccessPoint
@@ -68,13 +68,13 @@ echo "----------------------------"
 echo
 
 #install Snapcast
-cd ~/Ramplify
-sudo chmod +755 install-snapcast.sh
-sudo ./install-snapcast.sh
-echo "----------------------------"
-echo "Snapcast installed"
-echo "----------------------------"
-echo
+#cd ~/Ramplify
+#sudo chmod +755 install-snapcast.sh
+#sudo ./install-snapcast.sh
+#echo "----------------------------"
+#echo "Snapcast installed"
+#echo "----------------------------"
+#echo
 
 
 #delete installation files
