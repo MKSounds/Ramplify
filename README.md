@@ -57,4 +57,4 @@ After installing simply reboot the pi, connect to its hotspot "Ramplify" (passwo
 - [Snapcast: Synchronous audio player](https://github.com/badaix/snapcast)
 - [Access Point by ajfisher](https://gist.github.com/ajfisher/a84889e64565d7a74888)
 - [NODE-RED](https://nodered.org/)
-- [Raspotify](https://hoerli.net/mopidy-snapcast-multi-room-music-setup/)
+- [Raspotify](https://github.com/dtcooper/raspotify)
