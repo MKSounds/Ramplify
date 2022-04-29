@@ -2,6 +2,15 @@
 
 #if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
+#install node-red and dashboard
+cd ~/Ramplify/NodeRed
+sudo chmod +755 install-node-red.sh
+bash install-node-red.sh
+echo "----------------------------"
+echo "Node-Red installed"
+echo "----------------------------"
+echo
+
 #install bluetooth AAC and aptX codecs
 cd ~/Ramplify/Bluetooth
 sudo chmod +755 install-bluetooth-features.sh
@@ -12,15 +21,6 @@ echo "----------------------------"
 cd ~
 rm sudo rm -r rpi-multiroom-setup-master
 echo "rpi-multiroom-setup-master removed!"
-echo
-
-#install node-red and dashboard
-cd ~/Ramplify/NodeRed
-sudo chmod +755 install-node-red.sh
-bash install-node-red.sh
-echo "----------------------------"
-echo "Node-Red installed"
-echo "----------------------------"
 echo
 
 #install Spotify
