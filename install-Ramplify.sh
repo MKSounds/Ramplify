@@ -3,13 +3,15 @@
 #if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
 #install bluetooth AAC and aptX codecs
-#cd ~/Ramplify/Bluetooth
-#sudo chmod +755 install-bluetooth-features.sh
-#sudo ./install-bluetooth-features.sh
-#echo "Bluetooth installed!"
-#cd ~
-#rm sudo rm -r rpi-multiroom-setup-master
-#echo "rpi-multiroom-setup-master removed!"
+cd ~/Ramplify/Bluetooth
+sudo chmod +755 install-bluetooth-features.sh
+sudo ./install-bluetooth-features.sh
+echo "----------------------------"
+echo "Bluetooth installed!"
+echo "----------------------------"
+cd ~
+rm sudo rm -r rpi-multiroom-setup-master
+echo "rpi-multiroom-setup-master removed!"
 echo
 
 #install node-red and dashboard
@@ -22,13 +24,14 @@ echo "----------------------------"
 echo
 
 #install Spotify
-cd ~/Ramplify
-sudo chmod +755 install-spotify.sh
-sudo ./install-spotify.sh
-echo "----------------------------"
-echo "Spotify installed"
-echo "----------------------------"
-echo
+# ========= Raspotify only supports Debian >= Bullseye =========
+#cd ~/Ramplify
+#sudo chmod +755 install-spotify.sh
+#sudo ./install-spotify.sh
+#echo "----------------------------"
+#echo "Spotify installed"
+#echo "----------------------------"
+#echo
 
 #install Airplay
 sudo chmod +755 install-shairport.sh
