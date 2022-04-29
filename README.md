@@ -19,8 +19,8 @@ Activate the network settings or connect it to the Internet via LAN. You will ne
 After you have prepared the SD card, you can access the remote control with a simple program called [Putty](https://www.putty.org/). Use the ssh-tunnel to open a terminal and follow the commands bellow in the console. The default username is "pi" and the password is "raspberry". For your security you should change the password after installation.
 
 ```javascript
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade -y
 sudo apt install -y git
 git clone https://github.com/MKSounds/Ramplify
 cd Ramplify
