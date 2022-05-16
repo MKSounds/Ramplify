@@ -19,7 +19,7 @@ echo "----------------------------"
 echo "Bluetooth installed!"
 echo "----------------------------"
 cd ~
-rm sudo rm -r rpi-multiroom-setup-master
+sudo rm -r rpi-multiroom-setup-master
 echo "rpi-multiroom-setup-master removed!"
 echo
 
